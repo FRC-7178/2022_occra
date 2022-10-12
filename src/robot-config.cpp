@@ -11,6 +11,13 @@ brain  Brain;
 controller Controller1 = controller(primary);
 controller Controller2 = controller(partner);
 
+pwm_out frontRight = pwm_out(Brain.ThreeWirePort.A);
+pwm_out frontLeft = pwm_out(Brain.ThreeWirePort.B);
+pwm_out backRight = pwm_out(Brain.ThreeWirePort.C);
+pwm_out backLeft = pwm_out(Brain.ThreeWirePort.D);
+pwm_out armMotor = pwm_out(Brain.ThreeWirePort.F);
+
+
 // VEXcode generated functions
 // define variable for remote controller enable/disable
 bool RemoteControlCodeEnabled = true;

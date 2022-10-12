@@ -5,6 +5,11 @@ extern brain Brain;
 // VEXcode devices
 extern controller Controller1;
 extern controller Controller2;
+extern pwm_out frontRight;
+extern pwm_out frontLeft;
+extern pwm_out backLeft;
+extern pwm_out backRight;
+extern pwm_out armMotor;
 
 /**
  * Used to initialize code/tasks/devices added using tools in VEXcode Pro.
