@@ -130,6 +130,14 @@ using namespace vex;
 
 void moveArm(int targetPos)
 {
+  while(1){
+    task::sleep(1000);
+    Controller1.Screen.clearScreen();
+
+    Controller1.Screen.print(armEncoder.position(degrees));
+    Controller1.Screen.setCursor(1,1);
+    currentPos = armEncoder.position(degrees);
+  }
   
 }
 //Floor

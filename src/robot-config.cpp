@@ -16,6 +16,7 @@ pwm_out frontLeft = pwm_out(Brain.ThreeWirePort.B);
 pwm_out backRight = pwm_out(Brain.ThreeWirePort.C);
 pwm_out backLeft = pwm_out(Brain.ThreeWirePort.D);
 pwm_out armMotor = pwm_out(Brain.ThreeWirePort.F);
+encoder armEncoder = encoder(Brain.ThreeWirePort.G);
 
 
 // VEXcode generated functions
